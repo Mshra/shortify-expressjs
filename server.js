@@ -80,4 +80,3 @@ app.delete('/:code/delete', async (req, res) => {
 });
 
 app.listen(3000, () => console.log(`Server ready on PORT: 3000`));
-export default app;
