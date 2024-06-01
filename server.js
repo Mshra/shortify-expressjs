@@ -55,7 +55,7 @@ app.get('/:code', async (req, res) => {
     if (url) {
       return res.redirect(url.originalUrl);
     } else {
-      return res.status(404).json('No URL found');
+      return res.send('You are lost! No url found.');
     }
   } catch (err) {
     console.error(err);
