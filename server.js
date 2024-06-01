@@ -78,3 +78,5 @@ app.delete('/:code/delete', async (req, res) => {
     return res.status(500).json('Server error');
   }
 });
+
+app.listen(3000, () => console.log('App running on port: 3000'));
