@@ -78,5 +78,3 @@ app.delete('/:code/delete', async (req, res) => {
     return res.status(500).json('Server error');
   }
 });
-
-app.listen(3000, () => console.log(`Server ready on PORT: 3000`));
