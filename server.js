@@ -8,10 +8,7 @@ import cors from 'cors';
 dotenv.config()
 
 const app = express();
-app.use(cors({
-  origin: `${process.env.SITE}`,
-  optionsSuccessStatus: 200
-}))
+app.use(cors())
 app.use(express.json())
 
 mongoose.connect(process.env.DB_URI)
